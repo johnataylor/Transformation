@@ -1,0 +1,10 @@
+﻿
+@prefix c: <http://tempuri.org/schema/catalog#> .
+@prefix m: <http://tempuri.org/schema/music#> .
+@prefix b: <http://tempuri.org/british/music#> .
+
+b:ringo_star a m:Musician ;
+	         a m:SongWriter ;
+             c:firstName "Ringo" ;
+             c:lastName "Star" ;
+             m:instrument "Drums" .

@@ -1,0 +1,8 @@
+﻿
+<musician xmlns="http://tempuri.org/schema/music_catalog">
+  <category>british/music</category>
+  <id>george_harrison</id>
+  <name><first>George</first><last>Harrison</last></name>
+  <role>Songwriter</role>
+  <instrument>Guitar</instrument>
+</musician>

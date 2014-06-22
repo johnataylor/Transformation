@@ -1,0 +1,10 @@
+﻿
+<musician xmlns="http://tempuri.org/schema/music_catalog">
+  <category>british/music</category>
+  <id>john_lennon</id>
+  <name><first>John</first><last>Lennon</last></name>
+  <role>Songwriter</role>
+  <instrument>Guitar</instrument>
+  <instrument>Keyboards</instrument>
+  <instrument>Voice</instrument>
+</musician>

@@ -1,0 +1,16 @@
+﻿
+PREFIX m: <http://tempuri.org/schema/music#>
+PREFIX c: <http://tempuri.org/schema/catalog#>
+
+CONSTRUCT
+{
+	?band m:member ?musician .
+	?musician c:firstName ?musician_firstName ;
+	          c:lastName ?musician_lastName .
+}
+WHERE
+{
+	?musician m:memberOf ?band .
+	?musician c:firstName ?musician_firstName ;
+	          c:lastName ?musician_lastName .
+}

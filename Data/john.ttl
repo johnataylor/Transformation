@@ -1,0 +1,10 @@
+﻿
+@prefix c: <http://tempuri.org/schema/catalog#> .
+@prefix m: <http://tempuri.org/schema/music#> .
+@prefix b: <http://tempuri.org/british/music#> .
+
+b:john_lennon a m:Musician ;
+	          a m:SongWriter ;
+              c:firstName "John" ;
+              c:lastName "Lennon" ;
+              m:instrument "Guitar", "Keyboards", "Voice" .

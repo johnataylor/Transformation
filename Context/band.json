@@ -1,0 +1,11 @@
+﻿{
+	"@context" : { 
+		"c" : "http://tempuri.org/schema/catalog#",
+		"m" : "http://tempuri.org/schema/music#",
+		"name" : "c:name",
+		"firstName" : "c:firstName",
+		"lastName" : "c:lastName",
+        "member" : { "@id" : "m:member" , "@container" : "@set" }
+	},
+	"@type" : "http://tempuri.org/schema/music#Band"
+}

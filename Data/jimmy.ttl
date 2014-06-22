@@ -1,0 +1,12 @@
+﻿
+@prefix c: <http://tempuri.org/schema/catalog#> .
+@prefix m: <http://tempuri.org/schema/music#> .
+@prefix b: <http://tempuri.org/british/music#> .
+
+b:jimmy_page a m:Musician ;
+	         a m:SongWriter ;
+	         a m:Visionary ;
+             c:firstName "Jimmy" ;
+             c:lastName "Page" ;
+             m:instrument "Guitar" ;
+			 m:memberOf b:led_zepplin.

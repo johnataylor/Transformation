@@ -1,0 +1,10 @@
+﻿
+<band xmlns="http://tempuri.org/schema/music_catalog">
+  <category>british/music</category>
+  <id>beatles</id>
+  <name>Beatles</name>
+  <member>john_lennon</member>
+  <member>paul_mccarney</member>
+  <member>ringo_star</member>
+  <member>george_harrison</member>
+</band>

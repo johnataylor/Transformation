@@ -1,0 +1,9 @@
+﻿
+@prefix c: <http://tempuri.org/schema/catalog#> .
+@prefix m: <http://tempuri.org/schema/music#> .
+@prefix b: <http://tempuri.org/british/music#> .
+
+b:beatles a m:Band ;
+          c:name "Beatles" ;
+          m:member b:john_lennon , b:paul_mccartney , b:george_harrison , b:ringo_star .
+

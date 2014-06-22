@@ -1,0 +1,11 @@
+﻿
+PREFIX m: <http://tempuri.org/schema/music#>
+
+CONSTRUCT
+{
+	?band m:member ?musician .
+}
+WHERE
+{
+	?musician m:memberOf ?band . 
+}

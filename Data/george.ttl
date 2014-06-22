@@ -1,0 +1,10 @@
+﻿
+@prefix c: <http://tempuri.org/schema/catalog#> .
+@prefix m: <http://tempuri.org/schema/music#> .
+@prefix b: <http://tempuri.org/british/music#> .
+
+b:george_harrison a m:Musician ;
+	              a m:SongWriter ;
+                  c:firstName "George" ;
+                  c:lastName "Harrison" ;
+                  m:instrument "Guitar" .
