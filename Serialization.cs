@@ -87,13 +87,17 @@ namespace Transformation
                 }
             };
 
-            string json = JsonConvert.SerializeObject(package, Formatting.Indented, new JsonSerializerSettings
+            string compactedJson = JsonConvert.SerializeObject(package, Formatting.Indented, new JsonSerializerSettings
             {
                 TypeNameHandling = TypeNameHandling.All,
                 TypeNameAssemblyFormat = FormatterAssemblyStyle.Simple
             });
 
-            JObject obj = JObject.Parse(json);
+            Console.WriteLine("---------------- COMPACTED ----------------");
+            Console.WriteLine(compactedJson);
+            Console.WriteLine("---------------- --------- ----------------");
+
+            JObject obj = JObject.Parse(compactedJson);
 
             JObject context = JObject.Parse((new StreamReader(@"Context\package.json")).ReadToEnd());
             obj["@context"] = context["@context"];
@@ -102,16 +106,20 @@ namespace Transformation
 
             string flattenedJson = flattened.ToString();
 
+            Console.WriteLine("---------------- FLATTENED ----------------");
             Console.WriteLine(flattenedJson);
+            Console.WriteLine("---------------- --------- ----------------");
 
             IRdfReader rdfReader = new JsonLdReader();
             IGraph graph = new Graph();
             rdfReader.Load(graph, new StringReader(flattenedJson));
 
+            Console.WriteLine("---------------- TURTLE ----------------");
             CompressingTurtleWriter writer = new CompressingTurtleWriter();
             writer.CompressionLevel = 0;
             writer.DefaultNamespaces.AddNamespace("nuget", new Uri("http://nuget.org/schema#"));
             writer.Save(graph, Console.Out);
+            Console.WriteLine("---------------- ------ ----------------");
         }
     }
 }
