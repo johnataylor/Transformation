@@ -270,7 +270,9 @@ namespace Transformation
                 //Test3();
                 //Test4();
                 //Test5();
-                Test6();
+                //Test6();
+
+                Serialization.Test0();
             }
             catch (Exception e)
             {

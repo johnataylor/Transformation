@@ -60,6 +60,7 @@
     <Compile Include="JsonLdIntegration\JsonLdWriter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serialization.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\beatles.xml">
@@ -82,6 +83,9 @@
     </Content>
     <None Include="App.config" />
     <None Include="Context\band.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Context\package.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Data\beatles.ttl">

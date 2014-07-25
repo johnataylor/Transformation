@@ -1,0 +1,6 @@
+﻿{
+	"@context" : { 
+		"@vocab" : "http://nuget.org/schema#",
+        "DependencyGroup" : { "@container" : "@set" }
+	}
+}
