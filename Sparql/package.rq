@@ -1,0 +1,11 @@
+﻿
+PREFIX m: <http://nuget.org/schema#>
+
+CONSTRUCT
+{
+	?package a nuget:Package .
+}
+WHERE
+{
+	?package a nuget:Package .
+}
